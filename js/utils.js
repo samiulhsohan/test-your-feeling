@@ -36,6 +36,7 @@ export const renderQuestion = question => {
     setTimeout(() => {
       showEffectLayerImages()
       showQuestion()
+      enalbeOptions()
     }, 50)
   }, 1000)
 
@@ -43,7 +44,7 @@ export const renderQuestion = question => {
   const questionHtml = `<p class="question-text">${question.question}</p>`
 
   options.forEach((option, idx) => {
-    optionsHtml += `<button class="option" data-index="${idx}">${option.label}</button>`
+    optionsHtml += `<button disabled class="option" data-index="${idx}">${option.label}</button>`
   })
 
   test.innerHTML = `
@@ -97,5 +98,13 @@ export const disableOptions = () => {
   optionElements.forEach(optionElement => {
     optionElement.style.cursor = 'default'
     optionElement.disabled = true
+  })
+}
+
+export const enalbeOptions = () => {
+  const optionElements = document.querySelectorAll('.option')
+  optionElements.forEach(optionElement => {
+    optionElement.style.cursor = 'pointer'
+    optionElement.disabled = false
   })
 }

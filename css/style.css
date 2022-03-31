@@ -133,7 +133,7 @@ input[type='number'] {
   width: 20.25rem;
   border: 2px solid #fff;
   border-radius: 10rem;
-  cursor: pointer;
+  cursor: default;
   padding: 1rem;
   transition: all 0.25s;
   background: transparent;

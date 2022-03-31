@@ -1,11 +1,18 @@
 import {_} from './selector.js'
-import {startGame, renderQuestion} from './utils.js'
+import {
+  startGame,
+  renderQuestion,
+  showEffectLayerImages,
+  hideEffectLayerImages,
+  hideQuestion,
+} from './utils.js'
 
 window.age = 0
 window.feeling = {}
 
 _('#start').addEventListener('click', () => {
   startGame()
+  showEffectLayerImages()
 })
 
 _('#age-form').addEventListener('submit', e => {
@@ -13,8 +20,14 @@ _('#age-form').addEventListener('submit', e => {
   const formData = new FormData(e.target)
   const age = formData.get('age')
   if (!age) return
+
+  hideEffectLayerImages()
+  hideQuestion()
+
   window.age = age
-  renderQuestion(window.questions[0])
+  setTimeout(() => {
+    renderQuestion(window.questions[0])
+  }, 1000)
 })
 ;(() => {
   fetch('questions.json')
