@@ -11,6 +11,24 @@ body {
   font-family: Inter, sans-serif;
 }
 
+.top-bar {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.75rem;
+}
+
+.top-bar button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
 #question,
 #result {
   display: none;
@@ -76,7 +94,6 @@ body {
 .option {
   font-size: 7vw;
   font-weight: 300;
-  letter-spacing: -1px;
 }
 
 .options {
@@ -103,6 +120,7 @@ body {
 @media only screen and (min-width: 600px) {
   .question-text,
   .option {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    letter-spacing: -1px;
   }
 }
