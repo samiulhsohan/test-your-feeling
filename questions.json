@@ -1,0 +1,68 @@
+[
+  {
+    "id": "simple#1",
+    "type": "simple",
+    "question": "You like",
+    "music": "",
+    "styles": {
+      "backgroundColor": "#FFCBAD"
+    },
+    "options": [
+      {
+        "label": "Sea",
+        "nextQuestionId": "simple#2",
+        "feeling": {
+          "happy": 3,
+          "sad": 0,
+          "fear": 0,
+          "confused": 0,
+          "stressed": 0
+        }
+      },
+      {
+        "label": "Mountain",
+        "nextQuestionId": "simple#4",
+        "feeling": {
+          "happy": 0,
+          "sad": 3,
+          "fear": 0,
+          "confused": 0,
+          "stressed": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "simple#4",
+    "type": "simple",
+    "question": "You would consider yourself as",
+    "music": "",
+    "styles": {
+      "backgroundColor": "#8864D6"
+    },
+    "options": [
+      {
+        "label": "Pessimistic",
+        "nextQuestionId": "simple#1",
+        "feeling": {
+          "happy": 3,
+          "sad": 0,
+          "fear": 0,
+          "confused": 0,
+          "stressed": 0
+        }
+      },
+      {
+        "label": "Optimistic",
+        "nextQuestionId": "audio#4",
+        "feeling": {
+          "happy": 0,
+          "sad": 3,
+          "fear": 0,
+          "confused": 0,
+          "stressed": 0
+        }
+      }
+    ]
+  }
+]
