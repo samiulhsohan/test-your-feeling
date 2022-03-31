@@ -4,6 +4,7 @@ import {_} from './selector.js'
 const backgroundColors = {
   '02': '#d79496',
   '03': '#e8ba80',
+  '04': '#bed5e5',
 }
 
 export const startGame = () => {
@@ -17,13 +18,19 @@ export const renderQuestion = question => {
   _('.blur-layer').style.backgroundColor = backgroundColors[styleVariant]
   const test = _('#test')
 
-  setEffectLayerImages(styleVariant)
+  setTimeout(() => {
+    setEffectLayerImages(styleVariant)
+    setTimeout(() => {
+      showEffectLayerImages()
+      showQuestion()
+    }, 50)
+  }, 1000)
 
   let optionsHtml = ''
   const questionHtml = `<p class="question-text">${question.question}</p>`
 
   options.forEach((option, idx) => {
-    optionsHtml += `<div role="button" class="option" data-index="${idx}">${option.label}</div>`
+    optionsHtml += `<button class="option" data-index="${idx}">${option.label}</button>`
   })
 
   test.innerHTML = `
@@ -50,4 +57,32 @@ const setEffectLayerImages = styleVariant => {
     <img class="bounce-4" src="img/${styleVariant}/04.png" alt="" />
   `
   effectLayer.innerHTML = images
+}
+
+export const hideEffectLayerImages = () => {
+  Array.from(Array(4)).forEach((i, idx) => {
+    _(`.bounce-${idx + 1}`).style.opacity = '0'
+  })
+}
+
+export const showEffectLayerImages = () => {
+  Array.from(Array(4)).forEach((i, idx) => {
+    _(`.bounce-${idx + 1}`).style.opacity = '1'
+  })
+}
+
+export const hideQuestion = () => {
+  _('#test').style.opacity = '0'
+}
+
+export const showQuestion = () => {
+  _('#test').style.opacity = '1'
+}
+
+export const disableOptions = () => {
+  const optionElements = document.querySelectorAll('.option')
+  optionElements.forEach(optionElement => {
+    optionElement.style.cursor = 'default'
+    optionElement.disabled = true
+  })
 }

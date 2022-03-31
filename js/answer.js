@@ -1,6 +1,13 @@
-import {renderQuestion} from './utils.js'
+import {
+  renderQuestion,
+  hideEffectLayerImages,
+  hideQuestion,
+  disableOptions,
+} from './utils.js'
 
 export const handleAnswer = (_question, answer) => {
+  disableOptions('default')
+
   const {feeling, nextQuestionId} = answer
 
   Object.keys(feeling).forEach(key => {
@@ -9,8 +16,13 @@ export const handleAnswer = (_question, answer) => {
       : feeling[key]
   })
 
-  const nextQuestion = window.questions.filter(q => q.id === nextQuestionId)[0]
-  if (nextQuestion) {
+  hideEffectLayerImages()
+  hideQuestion()
+
+  setTimeout(() => {
+    const nextQuestion = window.questions.filter(
+      q => q.id === nextQuestionId,
+    )[0]
     renderQuestion(nextQuestion)
-  }
+  }, 1000)
 }

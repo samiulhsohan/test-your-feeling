@@ -78,11 +78,11 @@ input[type='number'] {
 }
 
 .effect-layer-background img {
-  transition: opacity 2s;
+  transition: opacity 1s;
   position: absolute;
   width: 60%;
   height: auto;
-  /* opacity: 0; */
+  opacity: 0;
   will-change: transform;
   mix-blend-mode: luminosity;
   transform: translate(-50%, -50%);
@@ -98,6 +98,10 @@ input[type='number'] {
   height: calc(100% - 180px);
   display: grid;
   place-items: center;
+}
+
+#test {
+  transition: all 1s;
 }
 
 .question-text,
@@ -132,6 +136,8 @@ input[type='number'] {
   cursor: pointer;
   padding: 1rem;
   transition: all 0.25s;
+  background: transparent;
+  color: #fff;
 }
 
 .option:hover {
@@ -147,6 +153,8 @@ input[type='number'] {
     letter-spacing: -1px;
   }
 }
+
+/* Animations */
 
 .bounce-1 {
   animation: moveX 34s linear 0s infinite alternate,
