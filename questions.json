@@ -4,9 +4,7 @@
     "type": "simple",
     "question": "You like",
     "music": "",
-    "styles": {
-      "backgroundColor": "#d79496"
-    },
+    "styleVariant": "02",
     "options": [
       {
         "label": "Sea",
@@ -37,9 +35,7 @@
     "type": "simple",
     "question": "You would consider yourself as",
     "music": "",
-    "styles": {
-      "backgroundColor": "#8864D6"
-    },
+    "styleVariant": "03",
     "options": [
       {
         "label": "Pessimistic",
