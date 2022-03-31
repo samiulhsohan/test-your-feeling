@@ -8,7 +8,7 @@ _('#start').addEventListener('click', () => {
   renderQuestion(window.questions[0])
 })
 ;(() => {
-  fetch('/questions.json')
+  fetch('questions.json')
     .then(res => res.json())
     .then(data => (window.questions = data))
 })()
