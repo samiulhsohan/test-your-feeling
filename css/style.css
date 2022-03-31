@@ -11,6 +11,16 @@ body {
   font-family: Inter, sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .top-bar {
   position: fixed;
   top: 24px;
@@ -72,7 +82,7 @@ body {
   position: absolute;
   width: 60%;
   height: auto;
-  opacity: 0;
+  /* opacity: 0; */
   will-change: transform;
   mix-blend-mode: luminosity;
   transform: translate(-50%, -50%);
@@ -91,9 +101,21 @@ body {
 }
 
 .question-text,
-.option {
+.option,
+#test form input {
   font-size: 7vw;
   font-weight: 300;
+}
+
+#test form input {
+  margin-top: 1.875rem;
+  width: 20.25rem;
+  border: 2px solid #fff;
+  border-radius: 10rem;
+  padding: 1rem;
+  transition: all 0.25s;
+  outline: none;
+  text-align: center;
 }
 
 .options {
@@ -119,8 +141,65 @@ body {
 
 @media only screen and (min-width: 600px) {
   .question-text,
-  .option {
+  .option,
+  #test form input {
     font-size: 2.5vw;
     letter-spacing: -1px;
+  }
+}
+
+.bounce-1 {
+  animation: moveX 34s linear 0s infinite alternate,
+    moveY 15s linear 0s infinite alternate-reverse;
+}
+
+.bounce-2 {
+  animation: moveXTwo 16s linear 0s infinite alternate,
+    moveYTwo 32s linear 0s infinite alternate;
+}
+
+.bounce-3 {
+  animation: moveX 38s linear 0s infinite alternate-reverse,
+    moveY 24s linear 0s infinite alternate-reverse;
+}
+
+.bounce-4 {
+  animation: moveXTwo 37s linear 0s infinite alternate-reverse,
+    moveYTwo 21s linear 0s infinite alternate;
+}
+
+@keyframes moveX {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes moveXTwo {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+@keyframes moveY {
+  from {
+    top: 10%;
+  }
+  to {
+    top: 90%;
+  }
+}
+
+@keyframes moveYTwo {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 80%;
   }
 }
