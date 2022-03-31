@@ -14,13 +14,18 @@ export const renderQuestion = question => {
   test.innerHTML = ''
 
   let optionsHtml = ''
-  const questionHtml = `<p>${question.question}</p>`
+  const questionHtml = `<p class="question-text">${question.question}</p>`
 
   options.forEach((option, idx) => {
     optionsHtml += `<div role="button" class="option" data-index="${idx}">${option.label}</div>`
   })
 
-  test.innerHTML = questionHtml + optionsHtml
+  test.innerHTML = `
+  ${questionHtml}
+  <div class="options">
+    ${optionsHtml}
+  </div>
+  `
 
   options.forEach((option, idx) => {
     const optionEl = _(`.option[data-index="${idx}"]`)
