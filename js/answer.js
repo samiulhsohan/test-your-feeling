@@ -1,4 +1,5 @@
 import {renderQuestion} from './question.js'
+import {showResult} from './result.js'
 import {hideEffectLayerImages, hideQuestion, disableOptions} from './utils.js'
 
 export const handleAnswer = (_question, answer) => {
@@ -16,7 +17,9 @@ export const handleAnswer = (_question, answer) => {
   hideQuestion()
 
   if (!nextQuestionId) {
-    alert('You are done!')
+    setTimeout(() => {
+      showResult()
+    }, 1000)
     return
   }
 

@@ -9,22 +9,20 @@
         "label": "Sea",
         "nextQuestionId": "color#1",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
+          "depressed": 1,
+          "happy": 2,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 1
         }
       },
       {
         "label": "Mountain",
         "nextQuestionId": "color#2",
         "feeling": {
-          "depressed": 2,
+          "depressed": 1,
           "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -40,22 +38,20 @@
         "label": "Security",
         "nextQuestionId": "text#2",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "angry": 1,
+          "fearful": 1
         }
       },
       {
         "label": "Loyalty",
         "nextQuestionId": "text#2",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -71,22 +67,20 @@
         "label": "Safety",
         "nextQuestionId": "text#2",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 2
         }
       },
       {
         "label": "Health",
         "nextQuestionId": "text#2",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
+          "depressed": 0,
+          "happy": 2,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       }
     ]
@@ -101,22 +95,20 @@
         "label": "Pessimistic",
         "nextQuestionId": "text#3",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 1
         }
       },
       {
         "label": "Optimistic",
         "nextQuestionId": "text#3",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       }
     ]
@@ -131,22 +123,20 @@
         "label": "How",
         "nextQuestionId": "text#4",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 1
         }
       },
       {
         "label": "Why",
         "nextQuestionId": "text#4",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
+          "depressed": 1,
+          "happy": 0,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 1
         }
       }
     ]
@@ -161,22 +151,20 @@
         "label": "Mom",
         "nextQuestionId": "text#5",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
+          "depressed": 0,
+          "happy": 2,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       },
       {
         "label": "5 Strangers",
         "nextQuestionId": "text#6",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -191,22 +179,20 @@
         "label": "Stories",
         "nextQuestionId": "text#7",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 1
         }
       },
       {
         "label": "Systems",
         "nextQuestionId": "text#7",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -221,22 +207,20 @@
         "label": "True",
         "nextQuestionId": "text#7",
         "feeling": {
-          "depressed": 2,
+          "depressed": 1,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 1
         }
       },
       {
         "label": "False",
         "nextQuestionId": "text#7",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       }
     ]
@@ -251,22 +235,20 @@
         "label": "Wide open",
         "nextQuestionId": "text#9",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       },
       {
         "label": "Usually closed",
         "nextQuestionId": "text#8",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 1
         }
       }
     ]
@@ -281,22 +263,20 @@
         "label": "Go outside",
         "nextQuestionId": "text#10",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       },
       {
         "label": "Stay inside",
         "nextQuestionId": "text#10",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -312,21 +292,19 @@
         "nextQuestionId": "text#10",
         "feeling": {
           "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "happy": 0,
+          "angry": 2,
+          "fearful": 0
         }
       },
       {
         "label": "Sometimes",
         "nextQuestionId": "text#10",
         "feeling": {
-          "depressed": 2,
+          "depressed": 1,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       }
     ]
@@ -341,22 +319,20 @@
         "label": "Go in",
         "nextQuestionId": "text#11",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       },
       {
         "label": "Quit",
         "nextQuestionId": "text#11",
         "feeling": {
-          "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "depressed": 1,
+          "happy": 0,
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
@@ -372,21 +348,19 @@
         "nextQuestionId": "text#12",
         "feeling": {
           "depressed": 2,
-          "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "happy": 0,
+          "angry": 1,
+          "fearful": 0
         }
       },
       {
         "label": "Answer",
         "nextQuestionId": "text#12",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 0
         }
       }
     ]
@@ -400,21 +374,19 @@
       {
         "label": "Dip",
         "feeling": {
-          "depressed": 2,
+          "depressed": 0,
           "happy": 1,
           "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "fearful": 2
         }
       },
       {
         "label": "Dive",
         "feeling": {
-          "depressed": 2,
+          "depressed": 1,
           "happy": 1,
-          "angry": 0,
-          "sad": 1,
-          "fear": 0
+          "angry": 1,
+          "fearful": 0
         }
       }
     ]
