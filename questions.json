@@ -60,7 +60,7 @@
     "id": "color#2",
     "type": "color",
     "question": "To you this color is",
-    "color": "green",
+    "color": "#00D408",
     "styleVariant": "10",
     "options": [
       {
