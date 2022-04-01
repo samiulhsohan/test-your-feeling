@@ -145,6 +145,16 @@ input[type='number'] {
   color: #000;
 }
 
+.color-question {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+
+/* Media queries */
+
 @media only screen and (min-width: 600px) {
   .question-text,
   .option,

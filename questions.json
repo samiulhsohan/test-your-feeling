@@ -1,62 +1,420 @@
 [
   {
-    "id": "simple#1",
-    "type": "simple",
+    "id": "text#1",
+    "type": "text",
     "question": "You like",
-    "music": "",
     "styleVariant": "02",
     "options": [
       {
         "label": "Sea",
-        "nextQuestionId": "simple#2",
+        "nextQuestionId": "color#1",
         "feeling": {
-          "happy": 3,
-          "sad": 0,
-          "fear": 0,
-          "confused": 0,
-          "stressed": 0
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
         }
       },
       {
         "label": "Mountain",
-        "nextQuestionId": "simple#4",
+        "nextQuestionId": "color#2",
         "feeling": {
-          "happy": 0,
-          "sad": 3,
-          "fear": 0,
-          "confused": 0,
-          "stressed": 0
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
         }
       }
     ]
   },
   {
-    "id": "simple#4",
-    "type": "simple",
+    "id": "color#1",
+    "type": "color",
+    "question": "This color presents",
+    "color": "blue",
+    "styleVariant": "04",
+    "options": [
+      {
+        "label": "Security",
+        "nextQuestionId": "text#2",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Loyalty",
+        "nextQuestionId": "text#2",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "color#2",
+    "type": "color",
+    "question": "This color presents",
+    "color": "green",
+    "styleVariant": "10",
+    "options": [
+      {
+        "label": "Safety",
+        "nextQuestionId": "text#2",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Health",
+        "nextQuestionId": "text#2",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#2",
+    "type": "text",
     "question": "You would consider yourself as",
-    "music": "",
     "styleVariant": "07",
     "options": [
       {
         "label": "Pessimistic",
-        "nextQuestionId": "simple#1",
+        "nextQuestionId": "text#3",
         "feeling": {
-          "happy": 3,
-          "sad": 0,
-          "fear": 0,
-          "confused": 0,
-          "stressed": 0
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
         }
       },
       {
         "label": "Optimistic",
-        "nextQuestionId": "audio#4",
+        "nextQuestionId": "text#3",
         "feeling": {
-          "happy": 0,
-          "sad": 3,
-          "fear": 0,
-          "confused": 0,
-          "stressed": 0
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#3",
+    "type": "text",
+    "question": "Your first question is",
+    "styleVariant": "08",
+    "options": [
+      {
+        "label": "How",
+        "nextQuestionId": "text#4",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Why",
+        "nextQuestionId": "text#4",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#4",
+    "type": "text",
+    "question": "You can save 5 strangers or your mom. Whom would you save?",
+    "styleVariant": "09",
+    "options": [
+      {
+        "label": "Mom",
+        "nextQuestionId": "text#5",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "5 Strangers",
+        "nextQuestionId": "text#6",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#5",
+    "type": "text",
+    "question": "I tend to see life through the lens of",
+    "styleVariant": "10",
+    "options": [
+      {
+        "label": "Stories",
+        "nextQuestionId": "text#7",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Systems",
+        "nextQuestionId": "text#7",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#6",
+    "type": "text",
+    "question": "Everything is connected",
+    "styleVariant": "11",
+    "options": [
+      {
+        "label": "True",
+        "nextQuestionId": "text#7",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "False",
+        "nextQuestionId": "text#7",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#7",
+    "type": "text",
+    "question": "My door is",
+    "styleVariant": "12",
+    "options": [
+      {
+        "label": "Wide open",
+        "nextQuestionId": "text#9",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Usually closed",
+        "nextQuestionId": "text#8",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#8",
+    "type": "text",
+    "question": "The sun is shining after a long time",
+    "styleVariant": "14",
+    "options": [
+      {
+        "label": "Go outside",
+        "nextQuestionId": "text#10",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Stay inside",
+        "nextQuestionId": "text#10",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#9",
+    "type": "text",
+    "question": "You worry",
+    "styleVariant": "13",
+    "options": [
+      {
+        "label": "All the time",
+        "nextQuestionId": "text#10",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Sometimes",
+        "nextQuestionId": "text#10",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#10",
+    "type": "text",
+    "question": "It's Monday morning, and you have to go to work",
+    "styleVariant": "15",
+    "options": [
+      {
+        "label": "Go in",
+        "nextQuestionId": "text#11",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Quit",
+        "nextQuestionId": "text#11",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#11",
+    "type": "text",
+    "question": "Your friend calls you and wants to chat",
+    "styleVariant": "06",
+    "options": [
+      {
+        "label": "Ignore",
+        "nextQuestionId": "text#12",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Answer",
+        "nextQuestionId": "text#12",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "text#12",
+    "type": "text",
+    "question": "Dip your toes or dive in head first",
+    "styleVariant": "01",
+    "options": [
+      {
+        "label": "Dip",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
+        }
+      },
+      {
+        "label": "Dive",
+        "feeling": {
+          "depressed": 2,
+          "happy": 1,
+          "angry": 0,
+          "sad": 1,
+          "fear": 0
         }
       }
     ]

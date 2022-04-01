@@ -1,9 +1,5 @@
-import {
-  renderQuestion,
-  hideEffectLayerImages,
-  hideQuestion,
-  disableOptions,
-} from './utils.js'
+import {renderQuestion} from './question.js'
+import {hideEffectLayerImages, hideQuestion, disableOptions} from './utils.js'
 
 export const handleAnswer = (_question, answer) => {
   disableOptions('default')
@@ -18,6 +14,11 @@ export const handleAnswer = (_question, answer) => {
 
   hideEffectLayerImages()
   hideQuestion()
+
+  if (!nextQuestionId) {
+    alert('You are done!')
+    return
+  }
 
   setTimeout(() => {
     const nextQuestion = window.questions.filter(

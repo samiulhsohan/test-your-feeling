@@ -8,11 +8,11 @@ Question types:
 
 ### Feelings
 
-1. Happy
-2. Sad
-3. Fear
-4. Confused
-5. Stressed
+1. Stress
+2. Angry
+3. Happy
+4. Sad
+5. Calm
 
 ```json
 {
@@ -26,15 +26,15 @@ Question types:
       "label": "Sea",
       "nextQuestion": 3,
       "feeling": {
-        "happy": 3,
-        "sad": 0,
-        "fear": 0,
-        "confused": 0,
-        "stressed": 0
+        "stress": 2,
+        "angry": 0,
+        "happy": 1,
+        "sad": 1,
+        "calm": 6
       }
     },
     {
-      "label": "Sea",
+      "label": "Mountain",
       "nextQuestion": 4,
       "feeling": {
         "happy": 0,

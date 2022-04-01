@@ -1,7 +1,7 @@
+import {renderQuestion} from './question.js'
 import {_} from './selector.js'
 import {
   startGame,
-  renderQuestion,
   showEffectLayerImages,
   hideEffectLayerImages,
   hideQuestion,
@@ -32,5 +32,9 @@ _('#age-form').addEventListener('submit', e => {
 ;(() => {
   fetch('questions.json')
     .then(res => res.json())
-    .then(data => (window.questions = data))
+    .then(data => {
+      window.questions = data
+      startGame()
+      showEffectLayerImages()
+    })
 })()
