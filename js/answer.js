@@ -3,7 +3,7 @@ import {showResult} from './result.js'
 import {hideEffectLayerImages, hideQuestion, disableOptions} from './utils.js'
 
 export const handleAnswer = (_question, answer) => {
-  disableOptions('default')
+  disableOptions()
 
   const {feeling, nextQuestionId} = answer
 

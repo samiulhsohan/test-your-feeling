@@ -12,6 +12,7 @@ export const renderQuestion = question => {
 
   const test = _('#test')
 
+  // new question transition
   setTimeout(() => {
     setEffectLayerImages(styleVariant)
     setTimeout(() => {
