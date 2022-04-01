@@ -110,11 +110,16 @@ input[type='number'] {
   transition: all 1s;
 }
 
+.question-text {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .question-text,
 .option,
 #test form input,
 .result .title {
-  font-size: 7vw;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -131,6 +136,7 @@ input[type='number'] {
 
 .options {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.875rem;
   margin-top: 1.875rem;
@@ -198,7 +204,7 @@ input[type='number'] {
   .option,
   #test form input,
   .result .title {
-    font-size: 2.5vw;
+    font-size: 3.125rem;
     letter-spacing: -1px;
   }
 
