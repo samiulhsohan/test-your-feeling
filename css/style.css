@@ -57,6 +57,11 @@ input[type='number'] {
   display: none;
 }
 
+#age-form p {
+  margin-top: 0.625rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 #start {
   margin-top: 70px;
 }
