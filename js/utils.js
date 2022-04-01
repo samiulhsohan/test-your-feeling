@@ -47,9 +47,14 @@ export const enableOptions = () => {
   })
 }
 
-const share = () => {
+const share = specific => {
+  let ogImageName = 'og'
+  if (specific && window.result) {
+    ogImageName = `og-${window.result}`
+  }
+
   window.open(
-    'https://vk.com/share.php?url=https://samiulhsohan.github.io/test-your-feeling/&image=https://samiulhsohan.github.io/test-your-feeling/img/og.png',
+    `https://vk.com/share.php?url=https://samiulhsohan.github.io/test-your-feeling/&image=https://samiulhsohan.github.io/test-your-feeling/img/${ogImageName}.png`,
     '_blank',
     'location=yes,height=570,width=640,scrollbars=yes,status=yes',
   )

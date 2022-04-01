@@ -12,6 +12,7 @@ export const showResult = () => {
   const highestFeeling = Object.keys(feeling).reduce((a, b) => {
     return feeling[a] > feeling[b] ? a : b
   })
+  window.result = highestFeeling
 
   _('#result-container').style.display = 'block'
   _('#result-container').style.backgroundColor = 'transparent'
