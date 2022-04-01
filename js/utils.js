@@ -46,3 +46,13 @@ export const enableOptions = () => {
     optionElement.disabled = false
   })
 }
+
+const share = () => {
+  window.open(
+    'https://vk.com/share.php?url=https://samiulhsohan.github.io/test-your-feeling/',
+    '_blank',
+    'location=yes,height=570,width=640,scrollbars=yes,status=yes',
+  )
+}
+
+window.share = share
