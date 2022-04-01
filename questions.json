@@ -30,7 +30,7 @@
   {
     "id": "color#1",
     "type": "color",
-    "question": "This color presents",
+    "question": "To you this color is",
     "color": "blue",
     "styleVariant": "04",
     "options": [
@@ -59,7 +59,7 @@
   {
     "id": "color#2",
     "type": "color",
-    "question": "This color presents",
+    "question": "To you this color is",
     "color": "green",
     "styleVariant": "10",
     "options": [
@@ -74,7 +74,7 @@
         }
       },
       {
-        "label": "Health",
+        "label": "Nature",
         "nextQuestionId": "text#2",
         "feeling": {
           "depressed": 0,
