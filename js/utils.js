@@ -1,10 +1,5 @@
 import {_} from './selector.js'
 
-export const startGame = () => {
-  _('#intro').style.display = 'none'
-  _('#question').style.display = 'block'
-}
-
 export const setEffectLayerImages = styleVariant => {
   const effectLayer = _('#effect-layer')
   const images = `

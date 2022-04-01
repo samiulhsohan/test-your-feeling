@@ -44,7 +44,23 @@ input[type='number'] {
   text-decoration: none;
 }
 
-#question,
+.age-title,
+#age-form,
+.start-title,
+#start {
+  transition: opacity 1s;
+}
+
+.age-title,
+#age-form {
+  opacity: 0;
+  display: none;
+}
+
+#start {
+  margin-top: 70px;
+}
+
 #result-container {
   display: none;
 }
@@ -111,7 +127,7 @@ input[type='number'] {
 }
 
 .question-text {
-  max-width: 80%;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
