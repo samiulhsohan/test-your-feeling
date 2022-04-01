@@ -52,10 +52,13 @@ _('#age-form').addEventListener('submit', e => {
 
 showEffectLayerImages()
 enableOptions()
-;(() => {
+
+function fetchQuestion() {
   fetch('questions.json')
     .then(res => res.json())
     .then(data => {
       window.questions = data
     })
-})()
+}
+
+fetchQuestion()
