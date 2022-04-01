@@ -20,4 +20,5 @@ export const showResult = () => {
     _('#result-container').style.backgroundColor = colors[highestFeeling]
     _('.result').style.opacity = '1'
   }, 100)
+  _('.top-cta').innerHTML = '<a href="index.html">Test again</a>'
 }

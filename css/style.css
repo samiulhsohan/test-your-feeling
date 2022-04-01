@@ -39,6 +39,11 @@ input[type='number'] {
   color: #fff;
 }
 
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #question,
 #result-container {
   display: none;
